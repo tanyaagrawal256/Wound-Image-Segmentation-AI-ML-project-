@@ -59,6 +59,14 @@ Visual outputs include:
 
 ⸻
 
+🚀 Future Improvements
+    •   Data augmentation for improved generalization
+ 	•   Handling class imbalance using focal loss
+ 	•   Larger and more diverse dataset
+ 	•   Deployment as a web-based inference tool
+
+⸻
+
 🛠 Tech Stack
 	•	Python
 	•	PyTorch
