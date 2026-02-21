@@ -63,7 +63,7 @@ Color Coding:
 
 Below is an example of wound segmentation using U-Net:
 
-![Sample Prediction](assets/prediction.png)
+![Sample Prediction](assets/Prediction.png)
 
 
 Overlay visualization highlights segmentation accuracy and region overlap.  
