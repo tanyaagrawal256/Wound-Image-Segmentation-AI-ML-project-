@@ -94,22 +94,22 @@ Overlay visualization highlights segmentation accuracy and region overlap.
 
 ⸻
 
-🚀 Future Improvements
-	•	Data augmentation for improved generalization
-	•	Handling class imbalance with Focal Loss
-	•	Hyperparameter tuning
-	•	Larger and more diverse dataset
-	•	Deployment as a web-based inference application
+🚀 Future Improvements  
+	•	Data augmentation for improved generalization  
+	•	Handling class imbalance with Focal Loss  
+	•	Hyperparameter tuning  
+	•	Larger and more diverse dataset  
+	•	Deployment as a web-based inference application  
 
 ⸻
 
-📌 Conclusion
+📌 Conclusion  
 
-This project demonstrates the application of deep learning for medical image segmentation using U-Net.
-The results indicate that CNN-based architectures can effectively support automated wound analysis and AI-driven healthcare solutions.
+This project demonstrates the application of deep learning for medical image segmentation using U-Net.  
+The results indicate that CNN-based architectures can effectively support automated wound analysis and AI-driven healthcare solutions.  
 
 ⸻
-👩‍⚕️ Author
+👩‍⚕️ Author  
 
-Tanya Agrawal
-BDS | AI and Healthcare Technology Enthusiast
+Dr. Tanya Agrawal  
+BDS | AI and Healthcare Technology Enthusiast  
