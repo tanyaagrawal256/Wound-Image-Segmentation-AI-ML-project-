@@ -1,81 +1,81 @@
-🩹 Wound Image Segmentation using U-Net (Deep Learning)
+🩹 Wound Image Segmentation using U-Net (Deep Learning)  
 
-📌 Project Overview
+📌 Project Overview  
 
-This project implements a U-Net based deep learning model for automated wound segmentation from clinical images.
-The model performs pixel-wise binary segmentation to accurately identify wound regions, demonstrating the application of convolutional neural networks in AI-driven healthcare.
-
-⸻
-
-🎯 Objective
-
-To develop and evaluate a deep learning model capable of:
-	•	Identifying wound regions in medical images
-	•	Generating accurate segmentation masks
-	•	Supporting AI-assisted clinical analysis
+This project implements a U-Net based deep learning model for automated wound segmentation from clinical images.  
+The model performs pixel-wise binary segmentation to accurately identify wound regions, demonstrating the application of convolutional neural networks in AI-driven healthcare.  
 
 ⸻
 
-🧠 Model Architecture
-	•	Architecture: U-Net (Encoder–Decoder CNN with Skip Connections)
-	•	Task: Binary Image Segmentation (Background vs Wound)
-	•	Loss Function: Binary Cross Entropy + Dice Loss
-	•	Optimizer: Adam
-	•	Learning Rate: 1e-4
-	•	Epochs: 20
-	•	Framework: PyTorch
+🎯 Objective  
 
-The Dice component improves overlap optimization and helps address class imbalance between wound and background pixels.
+To develop and evaluate a deep learning model capable of:  
+	•	Identifying wound regions in medical images  
+	•	Generating accurate segmentation masks  
+	•	Supporting AI-assisted clinical analysis  
 
 ⸻
 
-📊 Model Performance
-	•	Final Training Dice Score: ~0.72
-	•	Final Test Dice Score: ~0.79
-	•	Training loss showed consistent convergence across epochs
+🧠 Model Architecture  
+	•	Architecture: U-Net (Encoder–Decoder CNN with Skip Connections)  
+	•	Task: Binary Image Segmentation (Background vs Wound)  
+	•	Loss Function: Binary Cross Entropy + Dice Loss  
+	•	Optimizer: Adam  
+	•	Learning Rate: 1e-4  
+	•	Epochs: 20  
+	•	Framework: PyTorch  
 
-The model demonstrates effective localization of wound regions despite limited dataset size.
-
-⸻
-
-📈 Training Curves
-
-The following metrics were tracked during training:
-	•	Training Loss Curve
-	•	Dice Score vs Epochs
-
-Both curves indicate stable convergence and performance improvement over time.
+The Dice component improves overlap optimization and helps address class imbalance between wound and background pixels.  
 
 ⸻
 
-🔍 Sample Predictions
+📊 Model Performance  
+	•	Final Training Dice Score: ~0.72  
+	•	Final Test Dice Score: ~0.79  
+	•	Training loss showed consistent convergence across epochs  
 
-Each prediction includes:
-	•	Original Image
-	•	Ground Truth Mask
-	•	Predicted Mask
-	•	Overlay Visualization
-
-Color Coding:
-	•	🟢 Green → Predicted Mask
-	•	🔴 Red → Ground Truth
-
-Overlay visualization highlights segmentation accuracy and region overlap.
+The model demonstrates effective localization of wound regions despite limited dataset size.  
 
 ⸻
 
-📁 Dataset
-	•	Binary wound segmentation dataset
-	•	Images resized to 224×224
-	•	Masks converted to binary format (0 = background, 1 = wound)
+📈 Training Curves  
 
-⚠ Dataset not uploaded due to privacy constraints.
+The following metrics were tracked during training:  
+	•	Training Loss Curve  
+	•	Dice Score vs Epochs  
+
+Both curves indicate stable convergence and performance improvement over time.  
 
 ⸻
 
-⚙️ How to Run
-	1.	Clone the repository:
-	git clone https://github.com/tanyaagrawal256/Wound-Image-Segmentation-AI-ML-project-.git  
+🔍 Sample Predictions  
+
+Each prediction includes:  
+	•	Original Image  
+	•	Ground Truth Mask  
+	•	Predicted Mask  
+	•	Overlay Visualization  
+
+Color Coding:  
+	•	🟢 Green → Predicted Mask  
+	•	🔴 Red → Ground Truth  
+
+Overlay visualization highlights segmentation accuracy and region overlap.  
+
+⸻
+
+📁 Dataset  
+	•	Binary wound segmentation dataset  
+	•	Images resized to 224×224  
+	•	Masks converted to binary format (0 = background, 1 = wound)  
+
+⚠ Dataset not uploaded due to privacy constraints.  
+
+⸻
+
+⚙️ How to Run  
+	1.	Clone the repository:  
+	git clone https://github.com/tanyaagrawal256/Wound-Image-Segmentation-AI-ML-project-.git    
 	
 	2.	Install dependencies:
 	pip install -r requirements.txt  
@@ -85,12 +85,12 @@ Overlay visualization highlights segmentation accuracy and region overlap.
 
 ⸻
 
-🛠 Tech Stack
-	•	Python
-	•	PyTorch
-	•	NumPy
-	•	OpenCV
-	•	Matplotlib
+🛠 Tech Stack  
+	•	Python  
+	•	PyTorch  
+	•	NumPy  
+	•	OpenCV  
+	•	Matplotlib  
 
 ⸻
 
@@ -112,4 +112,4 @@ The results indicate that CNN-based architectures can effectively support automa
 👩‍⚕️ Author
 
 Tanya Agrawal
-BDS | AI in Healthcare Enthusiast
+BDS | AI and Healthcare Technology Enthusiast
