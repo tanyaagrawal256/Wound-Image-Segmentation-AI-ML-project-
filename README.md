@@ -75,10 +75,8 @@ Overlay visualization highlights segmentation accuracy and region overlap.
 
 ⚙️ How to Run  
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/tanyaagrawal256/Wound-Image-Segmentation-AI-ML-project.git  
+1.  Clone the repository:
+    git clone https://github.com/tanyaagrawal256/Wound-Image-Segmentation-AI-ML-project.git  
 
 2.	Install dependencies:  
 	pip install -r requirements.txt    
