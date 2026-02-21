@@ -1,69 +1,87 @@
-🩹 Wound Image Segmentation using U-Net
+🩹 Wound Image Segmentation using U-Net (Deep Learning)
 
 📌 Project Overview
 
-This project implements a deep learning-based wound segmentation model using the U-Net architecture. The model performs pixel-wise binary segmentation to identify wound regions from clinical images.
-
-The objective is to demonstrate how convolutional neural networks can assist in automated wound assessment and AI-driven healthcare applications.
+This project implements a U-Net based deep learning model for automated wound segmentation from clinical images.
+The model performs pixel-wise binary segmentation to accurately identify wound regions, demonstrating the application of convolutional neural networks in AI-driven healthcare.
 
 ⸻
 
 🎯 Objective
 
-To develop and evaluate a U-Net-based segmentation model capable of accurately detecting wound regions in medical images, supporting:
-	•	Wound area monitoring
-	•	Healing progression analysis
-	•	AI-assisted clinical decision support
+To develop and evaluate a deep learning model capable of:
+	•	Identifying wound regions in medical images
+	•	Generating accurate segmentation masks
+	•	Supporting AI-assisted clinical analysis
 
 ⸻
 
 🧠 Model Architecture
-	•	Architecture: U-Net (Encoder–Decoder CNN with skip connections)
-	•	Task: Binary image segmentation (Background vs Wound)
+	•	Architecture: U-Net (Encoder–Decoder CNN with Skip Connections)
+	•	Task: Binary Image Segmentation (Background vs Wound)
 	•	Loss Function: Binary Cross Entropy + Dice Loss
 	•	Optimizer: Adam
 	•	Learning Rate: 1e-4
 	•	Epochs: 20
 	•	Framework: PyTorch
 
-The Dice component helps address class imbalance by directly optimizing overlap between predicted and ground truth masks.
+The Dice component improves overlap optimization and helps address class imbalance between wound and background pixels.
 
 ⸻
 
-📊 Training Performance
+📊 Model Performance
 	•	Final Training Dice Score: ~0.72
 	•	Final Test Dice Score: ~0.79
-	•	Training Loss converged smoothly across epochs
+	•	Training loss showed consistent convergence across epochs
 
-The model demonstrates consistent convergence and reasonable segmentation performance despite limited dataset size and class imbalance.
+The model demonstrates effective localization of wound regions despite limited dataset size.
 
 ⸻
 
-🖼 Sample Predictions
+📈 Training Curves
 
-The model successfully localizes wound regions across different image samples.
-Visual outputs include:
+The following metrics were tracked during training:
+	•	Training Loss Curve
+	•	Dice Score vs Epochs
+
+Both curves indicate stable convergence and performance improvement over time.
+
+⸻
+
+🔍 Sample Predictions
+
+Each prediction includes:
 	•	Original Image
 	•	Ground Truth Mask
 	•	Predicted Mask
 	•	Overlay Visualization
 
-(See notebook for full visual results.)
+Color Coding:
+	•	🟢 Green → Predicted Mask
+	•	🔴 Red → Ground Truth
+
+Overlay visualization highlights segmentation accuracy and region overlap.
 
 ⸻
 
-⚠ Limitations
-	•	Limited dataset size
-	•	Class imbalance (small wound region vs large background)
-	•	No advanced augmentation techniques applied
+📁 Dataset
+	•	Binary wound segmentation dataset
+	•	Images resized to 224×224
+	•	Masks converted to binary format (0 = background, 1 = wound)
+
+⚠ Dataset not uploaded due to privacy constraints.
 
 ⸻
 
-🚀 Future Improvements
-    •   Data augmentation for improved generalization
- 	•   Handling class imbalance using focal loss
- 	•   Larger and more diverse dataset
- 	•   Deployment as a web-based inference tool
+⚙️ How to Run
+	1.	Clone the repository:
+	git clone https://github.com/your-username/Wound-Image-Segmentation-AI-ML-project.git
+
+	2.	Install dependencies:
+	pip install -r requirements.txt
+
+	3.	Open and run:
+	wound_image_segmentation_unet.ipynb
 
 ⸻
 
@@ -73,3 +91,25 @@ Visual outputs include:
 	•	NumPy
 	•	OpenCV
 	•	Matplotlib
+
+⸻
+
+🚀 Future Improvements
+	•	Data augmentation for improved generalization
+	•	Handling class imbalance with Focal Loss
+	•	Hyperparameter tuning
+	•	Larger and more diverse dataset
+	•	Deployment as a web-based inference application
+
+⸻
+
+📌 Conclusion
+
+This project demonstrates the application of deep learning for medical image segmentation using U-Net.
+The results indicate that CNN-based architectures can effectively support automated wound analysis and AI-driven healthcare solutions.
+
+⸻
+👩‍⚕️ Author
+
+Tanya Agrawal
+BDS | AI in Healthcare Enthusiast
