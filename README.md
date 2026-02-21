@@ -60,6 +60,12 @@ Color Coding:
 	•	🟢 Green → Predicted Mask  
 	•	🔴 Red → Ground Truth  
 
+
+Below is an example of wound segmentation using U-Net:
+
+![Sample Prediction](assets/prediction.png)
+
+
 Overlay visualization highlights segmentation accuracy and region overlap.  
 
 ⸻
